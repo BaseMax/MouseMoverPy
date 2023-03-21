@@ -42,4 +42,4 @@ To use infected.py, follow these steps:
 
 This program is provided under the GPL-3.0 License.
 
-Copyright Ali, 2023
+Copyright 2023, Max Base
