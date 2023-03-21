@@ -24,7 +24,7 @@ To use spy.py, follow these steps:
 
 - Open a terminal or command prompt and navigate to the directory where spy.py is located.
 - Run the script using the command python spy.py.
-- Enter commands in the format R 30, L 20, U 50, or D 10 to move the mouse cursor right, left, up, or down by the specified number of pixels, respectively.
+- Enter commands in the format `R 30`, `L 20`, `U 50`, or `D 10` to move the mouse cursor right, left, up, or down by the specified number of pixels, respectively.
 - The script will send the commands to the infected.py script running on a separate machine (where the mouse cursor will be moved accordingly).
 
 ### `infected.py`
