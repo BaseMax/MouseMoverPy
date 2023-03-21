@@ -10,23 +10,26 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         data = s.recv(1024)
         if not data:
             break
-        print(f"Received: {data.decode('utf-8')}")
-        direction, pixels = data.split()
-        direction = str(direction)
+
+        data_str = data.decode('utf-8')
+        print(f"Received: {data_str}")
+
+        direction, pixels = data_str.split()
         pixels = int(pixels)
 
         print("Direction:", direction)
         print("Pixels:", pixels)
+        print("")
 
         if direction == 'R':
             print("Moving right", pixels)
-            pyautogui.moveRel(int(pixels), 0)
+            pyautogui.moveRel(pixels, 0)
         elif direction == 'L':
             print("Moving left", pixels)
-            pyautogui.moveRel(-int(pixels), 0)
+            pyautogui.moveRel(-pixels, 0)
         elif direction == 'U':
             print("Moving up", pixels)
-            pyautogui.moveRel(0, -int(pixels))
+            pyautogui.moveRel(0, -pixels)
         elif direction == 'D':
             print("Moving down", pixels)
-            pyautogui.moveRel(0, int(pixels))
+            pyautogui.moveRel(0, pixels)
