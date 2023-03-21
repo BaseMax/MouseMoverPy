@@ -19,10 +19,14 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         print("Pixels:", pixels)
 
         if direction == 'R':
-            pyautogui.move(int(pixels), 0)
+            print("Moving right", pixels)
+            pyautogui.moveRel(int(pixels), 0)
         elif direction == 'L':
-            pyautogui.move(-int(pixels), 0)
+            print("Moving left", pixels)
+            pyautogui.moveRel(-int(pixels), 0)
         elif direction == 'U':
-            pyautogui.move(0, -int(pixels))
+            print("Moving up", pixels)
+            pyautogui.moveRel(0, -int(pixels))
         elif direction == 'D':
-            pyautogui.move(0, int(pixels))
+            print("Moving down", pixels)
+            pyautogui.moveRel(0, int(pixels))
