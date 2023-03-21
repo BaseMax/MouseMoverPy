@@ -42,6 +42,4 @@ To use infected.py, follow these steps:
 
 This program is provided under the GPL-3.0 License.
 
-I hope this helps you create a clear and comprehensive README for your program! Let me know if you have any further questions or concerns.
-
 Copyright Ali, 2023
