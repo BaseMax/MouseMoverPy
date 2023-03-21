@@ -13,7 +13,7 @@ To use mouse_mover, you will need:
 
 - Open a terminal or command prompt and navigate to the directory where mouse_mover is located.
 - Run the infected.py script using the command python infected.py.
-- The script will start listening for incoming connections on the default port (5555).
+- The script will start listening for incoming connections on the default port (65432).
 - Run the spy.py script on a separate machine to connect to the infected.py script and start controlling the mouse cursor remotely.
 
 ### `spy.py`
@@ -35,7 +35,7 @@ To use infected.py, follow these steps:
 
 - Open a terminal or command prompt and navigate to the directory where infected.py is located.
 - Run the script using the command python infected.py.
-- The script will start listening for incoming connections on the default port (5555).
+- The script will start listening for incoming connections on the default port (65432).
 - Once the spy.py script connects to the infected.py script, the mouse cursor will start moving based on the commands sent by the spy.py script.
 
 ## License
